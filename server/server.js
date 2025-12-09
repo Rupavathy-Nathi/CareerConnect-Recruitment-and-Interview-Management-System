@@ -12,10 +12,8 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: [
-        "http://localhost:3000",
-        "https://careerconnect.vercel.app"
-    ],
+    origin: "https://career-connect-psi-bay.vercel.app",
+
     credentials: true
 }));
 app.use(express.json());
