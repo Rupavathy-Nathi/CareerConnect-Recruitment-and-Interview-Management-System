@@ -4,7 +4,7 @@ const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
 const testRoutes = require("./routes/testRoutes");
 const jobRoutes = require("./routes/jobRoutes");
-
+const studentRoutes = require("./routes/studentRoutes");
 
 
 require("dotenv").config();
@@ -18,6 +18,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/test", testRoutes);
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/jobs", jobRoutes);
+app.use("/api/student", studentRoutes);
 
 // Test route
 app.get("/", (req, res) => {
