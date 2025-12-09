@@ -16,7 +16,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://careerconnect-recruitment-and-interview.onrender.com/"
+    baseURL: "https://careerconnect-recruitment-and-interview.onrender.com/api"
 });
 
 api.interceptors.request.use((config) => {
